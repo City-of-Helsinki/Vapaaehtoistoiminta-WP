@@ -63,6 +63,8 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 
+    overflow-x: hidden; // Partly hidden sliders
+
     @include bp(sm) {
         padding-top: $b-site-header-height;
     }

@@ -94,6 +94,37 @@
                             "min_size": "",
                             "max_size": "",
                             "mime_types": ""
+                        },
+                        {
+                            "key": "field_5de6dd3049936",
+                            "label": "Background color",
+                            "name": "background_color",
+                            "type": "select",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "dark-blue": "Dark blue",
+                                "almost-black": "Almost black",
+                                "pink": "Pink",
+                                "yellow": "Yellow",
+                                "white": "White",
+                                "green": "Green",
+                                "turquoise": "Turquoise",
+                                "light blue": "Light blue"
+                            },
+                            "default_value": [],
+                            "allow_null": 0,
+                            "multiple": 0,
+                            "ui": 0,
+                            "return_format": "value",
+                            "ajax": 0,
+                            "placeholder": ""
                         }
                     ],
                     "min": "",
@@ -122,5 +153,5 @@
     "hide_on_screen": "",
     "active": 0,
     "description": "",
-    "modified": 1560160588
+    "modified": 1575410927
 }

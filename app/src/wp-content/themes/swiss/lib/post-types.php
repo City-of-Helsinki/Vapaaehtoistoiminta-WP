@@ -122,6 +122,82 @@ function featuredActivitySetup()
     register_post_type('featured_activity', $args);
 }
 
+function ideaSetup()
+{
+    $labels = array(
+        'name'                  => _x('Ideas', 'post type general name', 'swiss'),
+        'singular_name'         => _x('Idea', 'post type singular name', 'swiss'),
+        'add_new'               => _x('Add New Idea', 'the add new post text', 'swiss'),
+        'add_new_item'          => _x('Add New Idea', 'the add new post text', 'swiss'),
+        'edit_item'             => _x('Edit Idea', 'the edit post text', 'swiss'),
+        'new_item'              => _x('New Idea', 'add new post text', 'swiss'),
+        'all_items'             => _x('All Ideas', 'String for the submenu', 'swiss'),
+        'view_item'             => _x('View Idea', 'view post text', 'swiss'),
+        'search_items'          => _x('Search Ideas', 'search post text', 'swiss'),
+        'not_found'             => _x('No Ideas found', 'not found post text', 'swiss'),
+        'not_found_in_trash'    => _x('No Ideas found in the Trash', 'not found trash post text', 'swiss'),
+        'parent_item_colon'     => '',
+        'menu_name'             => _x('Ideas', 'post type general name for menu', 'swiss')
+    );
+
+    $args = array(
+        'labels'                => $labels,
+        'description'           => _x('Ideas', 'post type description', 'swiss'),
+        'public'                => true,
+        'menu_position'         => 5,
+        'supports'              => array( 'title','thumbnail','editor'),
+        'taxonomies'            => array( '' ),
+        'has_archive'           => false,
+        'publicly_queryable'    => true,
+        'exclude_from_search'   => false,
+        'query_var'             => true,
+        'menu_icon'             => 'dashicons-warning',
+        'rewrite'               => array(
+            'slug' => _x('idea', 'URL slug', 'swiss')
+        )
+    );
+
+    register_post_type('idea', $args);
+}
+
+function placeSetup()
+{
+    $labels = array(
+        'name'                  => _x('Places', 'post type general name', 'swiss'),
+        'singular_name'         => _x('Place', 'post type singular name', 'swiss'),
+        'add_new'               => _x('Add New Place', 'the add new post text', 'swiss'),
+        'add_new_item'          => _x('Add New Place', 'the add new post text', 'swiss'),
+        'edit_item'             => _x('Edit Place', 'the edit post text', 'swiss'),
+        'new_item'              => _x('New Place', 'add new post text', 'swiss'),
+        'all_items'             => _x('All Places', 'String for the submenu', 'swiss'),
+        'view_item'             => _x('View Place', 'view post text', 'swiss'),
+        'search_items'          => _x('Search Places', 'search post text', 'swiss'),
+        'not_found'             => _x('No Places found', 'not found post text', 'swiss'),
+        'not_found_in_trash'    => _x('No Places found in the Trash', 'not found trash post text', 'swiss'),
+        'parent_item_colon'     => '',
+        'menu_name'             => _x('Places', 'post type general name for menu', 'swiss')
+    );
+
+    $args = array(
+        'labels'                => $labels,
+        'description'           => _x('Places', 'post type description', 'swiss'),
+        'public'                => true,
+        'menu_position'         => 5,
+        'supports'              => array( 'title','thumbnail','editor'),
+        'taxonomies'            => array( '' ),
+        'has_archive'           => false,
+        'publicly_queryable'    => true,
+        'exclude_from_search'   => false,
+        'query_var'             => true,
+        'menu_icon'             => 'dashicons-warning',
+        'rewrite'               => array(
+            'slug' => _x('place', 'URL slug', 'swiss')
+        )
+    );
+
+    register_post_type('place', $args);
+}
+
 /*
  * -----------------------------------------------------
  * ENABLE/DISABLE CUSTOM POST TYPES
@@ -133,6 +209,8 @@ function setCustomTypes()
     //serviceSetup();
     noticeSetup();
     featuredActivitySetup();
+    ideaSetup();
+    placeSetup();
 }
 
 add_action('init', 'Evermade\Swiss\PostTypes\setCustomTypes');
