@@ -1,0 +1,50 @@
+.c-card-carousel {
+    margin-bottom: 80px;
+
+    &.flickity-enabled .c-card-carousel__slide:not(.is-selected) {
+        opacity: 0.4;
+    }
+
+    &__slide {
+        width: 100%;
+
+        .c-card-slider--places & {
+            width: 50%;
+
+            @include bp(sm) {
+                width: 25%;
+            }
+        }
+    }
+
+    .flickity-viewport {
+        overflow: visible;
+    }
+
+    .flickity-button:disabled {
+        display: none;
+    }
+
+    .flickity-prev-next-button {
+        top: auto;
+        bottom: -40px;
+        transform: none;
+
+        &.next {
+            right: 0;
+
+            &:hover {
+                right: 0;
+            }
+        }
+
+        &.previous {
+            left: 0;
+
+            &:hover {
+                left: 0;
+            }
+        }
+    }
+
+}

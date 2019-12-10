@@ -1,0 +1,140 @@
+.c-card-slider {
+    display: flex;
+    height: 100%;
+    width: 100%;
+
+    &__card {
+        width: 100%;
+        margin-bottom: 16px;
+        position: relative;
+
+        @include bp(sm) {
+            width: 50%;
+        }
+
+        &::after {
+            content: "";
+            display: block;
+            padding-bottom: 140%;
+        }
+
+        &__wrapper {
+            overflow: hidden;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 5px;
+            right: 5px;
+        }
+
+        &__text {
+            position: absolute;
+            min-height: 90px;
+            padding: 10px;
+            bottom: 0;
+            left: 0;
+            right: 0;
+
+            background: $color-green;
+
+            [data-card-color="dark-blue"] & {
+                color: #fff;
+                background-color: $color-blue-bright;
+            }
+
+            [data-card-color="almost-black"] & {
+                color: #fff;
+                background-color: $color-almost-black;
+            }
+
+            [data-card-color="pink"] & {
+                background-color: $color-pink;
+            }
+
+
+            [data-card-color="yellow"] & {
+                background-color: $color-yellow;
+            }
+
+
+            [data-card-color="white"] & {
+                background-color: $color-white;
+            }
+
+
+            [data-card-color="green"] & {
+                background-color: $color-green;
+            }
+
+
+            [data-card-color="turquoise"] & {
+                background-color: $color-turquoise;
+            }
+
+
+            [data-card-color="light-blue"] & {
+                background-color: $color-blue; 
+            }
+
+        }
+
+        &__headline {
+            font-weight: bold;
+            font-style: normal;
+            font-stretch: normal;
+            text-align: left;
+            margin: 2px 0 0 0;
+            font-size: 1.85rem;
+            line-height: 1.1;
+            letter-spacing: -1px;
+            max-height: none;
+        }
+    }
+
+    &__wrap {
+        display: flex;
+        flex-wrap: wrap;
+
+        @include bp(sm) {
+            width: 50%;
+        }
+        
+        .c-card-slider--places & {
+            width: 100% !important;
+        }
+
+        .c-card-slider__card {
+            max-height: 50%;
+
+            [data-card-items="3"] &,
+            [data-card-items="2"] & {
+                width: 100% !important;
+    
+                &::after {
+                    padding-bottom: 70%;
+                }
+            }
+
+            .c-card-slider--places & {
+                width: 100% !important; 
+                max-height: none;
+
+            }
+
+            [data-card-items="2"] & {
+                max-height: 100%;
+            }
+        }
+    }
+
+    &__image {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+}
