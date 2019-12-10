@@ -9,7 +9,7 @@ var config = {
 
     targets: {
 
-        local:{},
+        local: {},
 
         staging: {
             hosts: {
@@ -21,9 +21,9 @@ var config = {
                 agent: process.env.SSH_AUTH_SOCK
             },
             options: {
-                buildRoot: '/srv/www/oodi.staging.em87.io', // No trailing slash
+                buildRoot: '/srv/www/vapaaehtoisalusta.em87.io', // No trailing slash
                 webRoot: '/dist', //relative from build root
-                url: 'http://oodi.staging.em87.io', // No trailing slash
+                url: 'http://vapaaehtoisalusta.em87.io', // No trailing slash
                 dbPush: true,
                 log: true
             }
@@ -31,7 +31,7 @@ var config = {
 
         production: {
             hosts: {
-                host: '94.237.9.125',
+                host: '94.237.13.235',
                 username: 'evermade',
                 privateKey: '',
                 passphrase: process.env.EVERMADEWEB_PASSPHRASE,
@@ -39,9 +39,9 @@ var config = {
                 agent: process.env.SSH_AUTH_SOCK
             },
             options: {
-                buildRoot: '/srv/www/www.oodihelsinki.fi', // No trailing slash
+                buildRoot: '/srv/www/vapaaehtoistoiminta.hel.fi', // No trailing slash
                 webRoot: '/dist', //relative from build root
-                url: 'http://www.oodihelsinki.fi', // No trailing slash
+                url: 'http://vapaaehtoistoiminta.hel.fi', // No trailing slash
                 dbPush: false,
                 log: false
             }

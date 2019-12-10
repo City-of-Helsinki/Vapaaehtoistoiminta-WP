@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "92a141f315e30983e9df02172d55ba1e",
-    "content-hash": "fc1aa423035ef6f44dbf1a6e540df69e",
+    "hash": "fba5dc015fa6c37a60d0056bbc8c1857",
+    "content-hash": "9780bfdc09d0ccdcb8608631b82fdb74",
     "packages": [
         {
             "name": "composer/installers",
@@ -240,17 +240,17 @@
         },
         {
             "name": "evermade/wpml-string-translation",
-            "version": "2.10.7",
+            "version": "3.0.3",
             "source": {
                 "type": "git",
                 "url": "git@bitbucket.org:evermade/wpml-string-translation.git",
-                "reference": "a9407c027a1d0c702035d77a0c5b32afc9a09353"
+                "reference": "2b8f159b784b1b4419b23954f35d64d3f007af1f"
             },
             "dist": {
                 "type": "tar",
-                "url": "http://composer.em87.io/dist/evermade/wpml-string-translation/evermade-wpml-string-translation-2.10.7-3ac0bb.tar",
-                "reference": "a9407c027a1d0c702035d77a0c5b32afc9a09353",
-                "shasum": "b54b78a4d68ef8c68b4851fa7d09a3a09a2de427"
+                "url": "http://composer.em87.io/dist/evermade/wpml-string-translation/evermade-wpml-string-translation-3.0.3-a938dc.tar",
+                "reference": "2b8f159b784b1b4419b23954f35d64d3f007af1f",
+                "shasum": "d16ccb550a61328167f00e4f5f2467997f9d9267"
             },
             "require": {
                 "composer/installers": "~1.0",
@@ -264,7 +264,7 @@
                 "GPL-3.0"
             ],
             "description": "Our private WPML String Translation repo so we can use it in our composer architecture.",
-            "time": "2019-09-30 10:27:24"
+            "time": "2019-11-07 14:28:11"
         },
         {
             "name": "evermade/wpml-translation-management",
@@ -540,15 +540,15 @@
         },
         {
             "name": "wpackagist-plugin/amazon-s3-and-cloudfront",
-            "version": "2.3.1",
+            "version": "2.3.2",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/amazon-s3-and-cloudfront/",
-                "reference": "tags/2.3.1"
+                "reference": "tags/2.3.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/amazon-s3-and-cloudfront.2.3.1.zip",
+                "url": "https://downloads.wordpress.org/plugin/amazon-s3-and-cloudfront.2.3.2.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -640,15 +640,15 @@
         },
         {
             "name": "wpackagist-plugin/searchwp-live-ajax-search",
-            "version": "1.3.1",
+            "version": "1.4.4",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/searchwp-live-ajax-search/",
-                "reference": "tags/1.3.1"
+                "reference": "tags/1.4.4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/searchwp-live-ajax-search.1.3.1.zip",
+                "url": "https://downloads.wordpress.org/plugin/searchwp-live-ajax-search.1.4.4.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -680,15 +680,15 @@
         },
         {
             "name": "wpackagist-plugin/wordpress-seo",
-            "version": "11.3",
+            "version": "12.7",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/wordpress-seo/",
-                "reference": "tags/11.3"
+                "reference": "tags/12.7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.11.3.zip",
+                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.12.7.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -700,15 +700,15 @@
         },
         {
             "name": "wpackagist-plugin/wp-mail-smtp",
-            "version": "1.4.2",
+            "version": "1.7.1",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/wp-mail-smtp/",
-                "reference": "tags/1.4.2"
+                "reference": "tags/1.7.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wp-mail-smtp.1.4.2.zip",
+                "url": "https://downloads.wordpress.org/plugin/wp-mail-smtp.1.7.1.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -720,15 +720,15 @@
         },
         {
             "name": "wpackagist-plugin/wp-super-cache",
-            "version": "1.6.9",
+            "version": "1.7.0",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/wp-super-cache/",
-                "reference": "tags/1.6.9"
+                "reference": "tags/1.7.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wp-super-cache.1.6.9.zip",
+                "url": "https://downloads.wordpress.org/plugin/wp-super-cache.1.7.0.zip",
                 "reference": null,
                 "shasum": null
             },
