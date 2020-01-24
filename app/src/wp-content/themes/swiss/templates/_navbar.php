@@ -1,6 +1,6 @@
 <section class="b-navbar js-navbar js-sticky" role="navigation">
     <div class="b-navbar__container">
-        <a tabindex="-1" class="b-navbar__logo js-navbar-logo" href="<?php bloginfo('url'); ?>" title="<?php bloginfo('name'); ?>"></a>
+        <a tabindex="-1" class="b-navbar__logo js-navbar-logo" style="background-image: url(<?php echo get_field('opt_logo_header', 'option')['sizes']['medium'];?>)" href="<?php bloginfo('url'); ?>" title="<?php bloginfo('name'); ?>"></a>
 
         <div class="b-navbar__navigation">
             <?php

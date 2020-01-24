@@ -249,7 +249,9 @@ return array(
                                 'yellow' => 'Yellow',
                                 'pink' => 'Pink',
                                 'green' => 'Green',
-                                'blue' => 'Blue',
+								'blue' => 'Blue',
+								'light-blue' => 'Light Blue',
+								'dark-green' => 'Dark Green',						
                             ),
                             'default_value' => array(
                                 0 => 'yellow',

@@ -256,3 +256,9 @@ function tinyMCE_editor_dynamic_styles( $mceInit ) {
     }
     return $mceInit;
 }
+
+function cc_mime_types($mimes) {
+    $mimes['svg'] = 'image/svg+xml';
+    return $mimes;
+}
+add_filter('upload_mimes', '\Evermade\Swiss\Hooks\cc_mime_types');

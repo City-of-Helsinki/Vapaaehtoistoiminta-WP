@@ -39,7 +39,7 @@
     if( $schedule || get_field('opt_opening_times_link', 'option') ): ?>
         <div class="b-site-header__opening-times-wrapper">
             <div class="b-site-header__opening-times-wrapper__clock">
-                <i class="c-icon c-icon__clock"></i>
+                <i class="c-icon c-icon__heart"></i>
             </div>
             <div class="b-site-header__opening-times-wrapper__content">
                 <?php if( $schedule ){ ?>

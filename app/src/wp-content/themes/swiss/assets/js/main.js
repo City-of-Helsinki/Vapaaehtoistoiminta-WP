@@ -27,3 +27,4 @@ import "./components/respa/respa";
 import "./components/toolbox";
 import "./components/youtube-api-player";
 import "./components/live-image";
+import "./components/taglist";

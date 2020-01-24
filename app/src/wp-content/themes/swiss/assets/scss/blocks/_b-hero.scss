@@ -16,6 +16,33 @@
         display: table; /*[1]*/
     }
 
+    &--dark-blue {
+        background-color: $color-blue;
+        color: #fff;
+    }
+    &--almost-black {
+        background-color: $color-almost-black;
+        color: #fff;
+    }
+    &--pink {
+        background-color: $color-pink;
+    }
+    &--yellow {
+        background-color: $color-white;
+    }
+    &--green {
+        background-color: $color-green;
+    }
+    &--turquoise {
+        background-color: $color-turquoise;
+    }
+    &--light-blue {
+        background-color: $color-blue-light;
+    }
+    &--with-image {
+        color: #fff;
+    }
+
     h1 {
         @include font-size(xxl);
     }
@@ -123,6 +150,13 @@
             width:33%;
             align-self:flex-start;
             padding-bottom:0;
+        }
+    }
+
+    .archive & {
+        &__background {
+            min-height: 0;
+            height: auto;
         }
     }
 }

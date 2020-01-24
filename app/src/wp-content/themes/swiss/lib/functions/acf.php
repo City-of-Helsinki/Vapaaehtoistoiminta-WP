@@ -187,6 +187,20 @@ function registerLocalBlockFieldGroups()
                         'value' => 'service',
                     ),
                 ),
+                array(
+                    array(
+                        'param' => 'post_type',
+                        'operator' => '==',
+                        'value' => 'idea',
+                    ),
+                ),
+                array(
+                    array(
+                        'param' => 'post_type',
+                        'operator' => '==',
+                        'value' => 'place',
+                    ),
+                ),
             ),
             'menu_order' => 0,
             'position' => 'normal',

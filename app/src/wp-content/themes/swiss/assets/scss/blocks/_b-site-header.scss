@@ -57,7 +57,7 @@
 
             i, svg, * , i:before {
                 width: 32px;
-                height: 34px;
+                height: 27px;
             }
         }
 
@@ -69,6 +69,11 @@
             &__time {
                 font-weight: 600;
                 font-size: 1.4rem;
+
+                i {
+                    font-size: 0.8em;
+                    margin-left: 1rem;
+                }
             }
 
             &__link {

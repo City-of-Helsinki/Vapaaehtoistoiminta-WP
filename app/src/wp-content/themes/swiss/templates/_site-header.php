@@ -1,6 +1,6 @@
 <header class="b-site-header js-site-header">
     <div class="b-site-header__container">
-        <a class="b-site-header__logo" href="<?php bloginfo('url'); ?>" title="<?php bloginfo('name'); ?>"><?php bloginfo('name'); ?></a>
+        <a class="b-site-header__logo" href="<?php bloginfo('url'); ?>" title="<?php bloginfo('name'); ?>" style="background-image: url(<?php echo get_field('opt_logo_header', 'option')['sizes']['medium'];?>)"><?php bloginfo('name'); ?></a>
 
         <div class="b-site-header__slogan">
             <?php echo \Evermade\Swiss\template('_slogan.php'); ?>
@@ -10,7 +10,12 @@
               <div class="b-site-header__opening-times-wrapper" id="opening-times"></div>
         <?php endif; */?>
 
-        <?php echo \Evermade\Swiss\template('_open-times.php'); ?>
+        <?php if (get_field('opt_opening_times_custom', 'option') !== true):
+            echo \Evermade\Swiss\template('_open-times.php');
+        else:
+            echo \Evermade\Swiss\template('_open-times-custom.php');
+        endif;
+        ?>
 
         <div class="b-site-header__extras">
             <?php echo \Evermade\Swiss\wpmlLanguageSwitcher(); ?>

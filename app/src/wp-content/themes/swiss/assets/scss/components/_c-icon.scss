@@ -23,6 +23,20 @@
             background-size:100%;
         }
     }
+    &__heart {
+        &::before {
+            content:'';
+            width: 18px;
+            height: 23px;
+            position: absolute;
+            background: url('../img/heart-icon.svg');
+            background-size:100%;
+        }
+    }
+
+    &__custom {
+        background-repeat: no-repeat;
+    }
 
     &__close {
         display: block;

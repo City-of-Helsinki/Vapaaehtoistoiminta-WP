@@ -60,10 +60,11 @@ return array(
         'default' => 'Default',
         'almost-black' => 'Almost Black',
         'blue' => 'Blue', 
-        'grey' => 'Grey',
+        'grey' => 'Light Grey',
         'yellow' => 'Yellow',
         'pink' => 'Pink',
-        
+        'light-blue' => 'Light Blue',
+        'dark-green' => 'Dark Green',
         'turquoise' => 'Turquoise',
       ),
       'default_value' => array(

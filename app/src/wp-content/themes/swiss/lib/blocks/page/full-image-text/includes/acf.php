@@ -90,7 +90,9 @@ return array (
                 'pink' => 'Pink',
                 'green' => 'Green',
                 'blue' => 'Blue',
-                'white' => 'White'
+                'white' => 'White',
+                'light-blue' => 'Light Blue',
+                'dark-green' => 'Dark Green',        
             ),
             'default_value' => array(
                 0 => 'yellow',

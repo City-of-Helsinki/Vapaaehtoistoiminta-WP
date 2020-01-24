@@ -10,7 +10,7 @@
                 <div class="b-subpage-hero__text--inner b-subpage-hero__text--inner-blog">
                     <div class="b-subpage-hero__blog-main">
                         <div class="h-wysiwyg-html">
-                            <a class="b-subpage-hero__back" href="<?php echo get_permalink( get_page_by_path( 'vapaaehtoiseksi' ) );?>"><i class="fas fa-arrow-left"></i><?php _e('Back to article listing', 'swiss'); ?></a>
+                            <a class="b-subpage-hero__back" href="<?php echo get_permalink( get_page_by_path( 'vapaaehtoiseksi' ) );?>"><i class="fas fa-arrow-left"></i><?php _e('Back to task listing', 'swiss'); ?></a>
 
                             <h1><?php the_title(); ?></h1>
                                 <div class="b-subpage-hero__extra">

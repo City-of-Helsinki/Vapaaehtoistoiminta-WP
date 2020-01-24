@@ -339,7 +339,7 @@ function wpmlLanguageSwitcher()
                 if (!empty($l['language_code']) && !$l['active']) {
                     $output .= ucfirst(icl_disp_language($l['native_name']));
                 }
-                if (!$l['active']) {
+                if (!isset($l['active'])) {
                     $output .= '</a>';
                 }
                 if (!empty($l['active']) && $l['active']) {
