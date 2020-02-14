@@ -17,7 +17,7 @@ class LinkedEvents {
      */
     public function updateStores() {
         // TODO: Change this to the correct location (or allow passing it from outside)...
-        $response = $this->query('event', ['location' => 'tprek:51342', 'start' => 'today', 'end' => '2090-12-12', 'sort' => 'start_time'],'',true);
+        $response = $this->query('event', ['keyword' => 'yso:p27499,yso:p3050', 'start' => 'today', 'end' => '2090-12-12', 'sort' => 'start_time'],'',true);
         $stores = [];
 
         // If we get a response
@@ -39,7 +39,6 @@ class LinkedEvents {
         //     array_merge($stores, $response->data);
         //     $results = $this->query($response->meta->next);
         // }
-
         // Save to cache for an hour.
         update_option($this::TRANSIENT_NAME, json_encode($stores));
 

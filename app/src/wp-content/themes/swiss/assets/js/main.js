@@ -11,7 +11,7 @@ import "./components/helpers";
 import "./components/ajax-load-more";
 import "./components/animations";
 import "./components/blog";
-import "./components/flickity";
+// import "./components/flickity"; <-- we are not using this and is buggy
 import "./components/featured-activities";
 import "./components/forms";
 import "./components/linkedevents/linkedevents";

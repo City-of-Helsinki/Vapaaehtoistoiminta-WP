@@ -280,7 +280,7 @@ class LinkedEvents extends React.Component {
                 langFiltered.push(item);
             }
         }
-        )}
+        );}
 
         if (this.state.highlighted.length > 0) {
             highlighted = langFiltered.filter(item => {
